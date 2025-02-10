@@ -13,7 +13,6 @@ llm=ChatGoogleGenerativeAI(model="gemini-1.5-flash",
                            google_api_key=os.getenv("GOOGLE_API_KEY"))
 
 # Creating a senior researcher agent with memory and verbose mode
-
 news_researcher=Agent(
     role="Senior Researcher",
     goal='Unccover ground breaking technologies in {topic}',
@@ -32,7 +31,6 @@ news_researcher=Agent(
 )
 
 ## creating a write agent with custom tools responsible in writing news blog
-
 news_writer = Agent(
   role='Writer',
   goal='Narrate compelling tech stories about {topic}',
